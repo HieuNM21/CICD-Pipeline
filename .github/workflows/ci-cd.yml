@@ -52,4 +52,4 @@ jobs:
           file: ./Dockerfile
           push: true
           # Đặt tên image theo định dạng: ghcr.io/tên-user-của-bạn/tên-repo:latest
-          tags: ghcr.io/${{ github.repository_owner }}/bankinfo-mi:latest
+          tags: ghcr.io/${{ env.REPO_OWNER }}/bankinfo-mi:latest
