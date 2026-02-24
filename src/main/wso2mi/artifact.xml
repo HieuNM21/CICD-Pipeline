@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifacts>
+    <artifact name="BankInfoAPI" groupId="com.microintegrator.projects" version="1.0.0" type="api" serverRole="EnterpriseServiceBus">
+        <file>artifacts/apis/BankInfoAPI.xml</file>
+    </artifact>
+</artifacts>
