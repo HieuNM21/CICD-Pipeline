@@ -3,7 +3,7 @@
     <resource methods="GET" uri-template="/">
         <inSequence>
             <payloadFactory media-type="json">
-                <format>{"os": "Ubuntu Linux", "bank": "TCLife", "status": "Running inside Docker"}</format>
+                <format>{"os": "Ubuntu Linux", "bank": "TCLife", "status": "Test CI/CD Pipeline"}</format>
                 <args/>
             </payloadFactory>
             <respond/>
