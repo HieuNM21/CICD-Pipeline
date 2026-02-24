@@ -40,7 +40,11 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # 5. Build Docker Image dựa trên Dockerfile của bạn và Push lên GHCR
+      # 5: Chuyển tên owner thành chữ thường
+      - name: Convert repository owner to lowercase
+        run: echo "REPO_OWNER=${GITHUB_REPOSITORY_OWNER,,}" >> ${GITHUB_ENV}
+
+      # 6. Build Docker Image dựa trên Dockerfile của bạn và Push lên GHCR
       - name: Build and Push Docker image
         uses: docker/build-push-action@v5
         with:
